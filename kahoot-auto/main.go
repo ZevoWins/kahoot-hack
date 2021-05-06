@@ -68,7 +68,7 @@ func main() {
 		panic(err)
 	}
 	answers := ParseQuizInformation(data)
-	conn, err := kahoot.NewConn(gamePin)
+	conn, err := kahoot.NewConn(665)
 	if err != nil {
 		fmt.Fprintln(os.Stderr, "failed to connect:", err)
 		os.Exit(1)
